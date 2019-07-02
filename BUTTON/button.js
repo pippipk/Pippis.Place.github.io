@@ -1,4 +1,4 @@
-class RECTANGLE{
+class BUTTON{
     constructor(x, y, w, h, col, col1){
         this.x = x;
         this.y = y;
@@ -41,7 +41,7 @@ class RECTANGLE{
         this.yMouseStart = e.offsetY;
         this.mouseDown = true;
         if (this.x < this.xMouse && (this.x+this.w) > this.xMouse && this.yMouse > this.y && this.yMouse < (this.y+this.h)&& this.mouseDown == true){
-            RECTANGLE.selected=this;
+            BUTTON.selected=this;
             this.color += 1;
         }
     }
@@ -73,13 +73,13 @@ class RECTANGLE{
 
     update(){
         this.draw();
-        if(RECTANGLE.selected==this){
+        if(BUTTON.selected==this){
             this.text();
         }
     }
 
 
 }
-RECTANGLE.selected = " ";
+BUTTON.selected = " ";
 
 
