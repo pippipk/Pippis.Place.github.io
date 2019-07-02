@@ -19,6 +19,11 @@
             margin-bottom: 20px;
             
         }
+        .imgSizer2{
+            width: 650px;
+            margin-bottom: 20px;
+            
+        }
         .vid_div{
             margin-bottom: 30px;
         }
@@ -26,6 +31,15 @@
             font-style: italic;
             font-weight:bolder; 
 
+        }
+        .mylist li a{
+            color: hotpink;
+        }
+        .mylist li a:visited{
+            color: hotpink;
+        }
+        .mylist li a:hover{
+            color: white;
         }
         h1{
             font-family: 'Bahiana', cursive;
@@ -35,7 +49,38 @@
 
 </head>
 <body>
-    <hr>
+
+        <h1>Relevant Implications</h1>
+        <P>-   We have future proofed the design of this program. Future Proofing means the program is designed so new features can be added easily and the old ones easily removed.
+            <br><br>
+            -   We have been adding things this whole time, in each of the sprints. We addressed this in the way the programme has been designed.
+            <br><br>
+            -   Program elements (colours, buttons and shapes) have all been programed as objects. This means each object is a self contained module piece of code that takes a defined set of parameters to work. Most take basic mouse data and colours to work. All objects are built to a similar structure and compulsorily contain an update function. This means they can appear on the interface using the update call. Management of most of the objects happens in a central place (Control Object). The idea is if you give the program to someone else (an experienced programmer), they could interpret what it does and built a new component. They could remove features and add new features. 
+            <br><br>
+            -   Comments in the code are precise and informative. 
+            </P><hr>
+
+    <h1>Development: </h1>
+    <p>This is my plan in development before I start my sprints.</p>
+    <h3>My Trello plan </h3>
+    <div><img class="imgSizer" src="preSprint.jpg"></div>
+
+    <h3>My Development Folders </h3><ul class="mylist">
+<li><a href="DRAWING/drawing.html"> My First Drawing Set with Basic Functions</a> Learning basic drawing functions</li>
+<li><a href="dots/objects.html"> Five Dots Activity</a> Learning basic looping with multiple shapes</li>
+<li><a href="INTERACTION/objects.html"> Interaction </a> Interaction of Objects </li>
+<li><a href="ANIMATION/objects.html"> Animation of Objects</a> Animated </li>
+<li><a href="LOOPS/loops.html"> Looping</a> Looped Objects </li>
+<li><a href="ROTATIONS/rotations.html"> Rotations</a> Loops combined with rotations</li>
+<li><a href="BUTTON/objects copy.html"> Buttons, Points, Sliders</a> Folder of buttons, points and sliders </li>
+</ul><br><hr>
+
+
+    <h1>Product Backlog: </h1>
+        <p>This is my list of idea for things I am hoping to create or build into my program in this assessment. I likely will not be able to implement all of these into my program but this is bountiful list to choose from. Some things I might try out and find they don't work very well for my specific program, i.e rotating or animation for a drawing program may not work, and some things I may find too hard to code.</p>
+        <h3>My Trello plan </h3>
+        <div><img class="imgSizer" src="pdtBacklog.jpg"></div><hr>
+
     <h1>Sprint One: </h1>
     <p>My aim for this first sprint is to have a defined drawing box on the canvas. When the user down drags in this area, the bounding box shows the boundary defined by MouseStart and current Mouse coordinates, using my rectangle function developed in the developing stage. When the rectangle is released a coloured rectangle stays on the screen.<br></p>
     <p> I will <span class="bold">thoroughly </span> comment the code!</p>
@@ -58,6 +103,8 @@
             <div><img class="imgSizer" src="sprintOneImage.jpg"></div>
         <li><a href="SPRINT1/index.html"> Sprint One File</a></li>
         <hr>
+
+
         <h1>Second Sprint: </h1>
         <p>My aim is to create an ellipse shape to draw on the canvas.<br>
             Later I will combine this with the draw rectangle function to have a program that can draw multiple shapes. This will give me a potentially shippable product of <span class="bold">two </span>features.
@@ -65,22 +112,362 @@
         <h3>My Trello plan </h3>
         <div><img class="imgSizer" src="sprintTwo.jpg"></div>
         <h3> Testing </h3>
-        <p> This first test</p>
+        <p> This first test tests if the boundary box is still functioning correctly.</p>
         <div><img class="imgSizer" src="box.jpg"></div>
-            <p> This second test explores how the bounding box appears when I click and drag in and out of the rectangle.<br>
-            This could be a bit more user friendly by staying at the boundary if the user drags outside , 
-            but this is a reasonable working version for now.
+            <p> This second test explores how the ellipse dragging box appears on the screen before the ellipse will be pushed into the object set. 
             </p>
+        <div><img class="imgSizer" src="ellipse.jpg"></div>
+            </div>
+            <p> This third test, tests if the function works correctly with the ellipse being pushed on the screen.
+                </p>
+                <div class="vid_div"><video width="800"  controls>
+                    <source src="ellipsetest.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+            <p> This last test, tests how changing the rotation of the ellipse changes the ellipse. 
+            </p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src="ellipsetest2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+            <li><a href="SPRINT2/index.html"> Sprint Two File</a></li>
+            <hr>
+
+
+    <h1>Third Sprint: </h1>
+    
+    <p>My aim is to more colour swatches (colour squares).<br>
+        This will allow the user to select a colour for the shape and that will set the rectangle colour variable.
+        This will now give me a potentially shippable product that has choices for colour.
+</p>
+    <h3>My Trello plan </h3>
+    <div><img class="imgSizer" src="sprintThree.jpg"></div>
+    <h3>Testing </h3>
+    <p>For my first test, I made sure my buttons made in the development stage are still functioning.
+    </p>
+    <div class="vid_div"><video width="800"  controls>
+        <source src="buttonTest.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </div>
+    <p>I created six buttons onto the screen. I had some issues along the way. 
+    </p>
+    <div><img width="200" src="sprint3.jpg"></div>
+    <br>
+    <div><img width="500" src="button.jpg"></div>
+    <p>When I was successful, my buttons could be selected but could not draw a rectangle yet.</p>
+    <div class="vid_div"><video width="800"  controls>
+        <source src="button.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video></div>
         <div class="vid_div"><video width="800"  controls>
-                <source src="test1.mp4" type="video/mp4">
+            <source src="buttonTest2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+    <p>Here, my last test. The buttons change the colour of the rectangle and the boundary box is still working correctly. I have finished this sprint. </p>
+    <div class="vid_div"><video width="800"  controls>
+        <source src="buttonLastTest.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video></div>
+
+    <p>Reflection: I can now go on and build a number of new shapes and consider what other useful features can be included.</p>
+    <li><a href="SPRINT3/index.html"> Sprint Three File</a></li>
+    <hr>
+
+
+    <h1>Fourth Sprint: </h1>
+    <p>My aim for this sprint to incorporate a second shape.<br><br>
+        I want be able to draw <span class="bold">both </span> a rectangle and an ellipse on the screen. I will a button for each to change between them. I want to still be able to change colour. Some text might be good to add for a better user experience. For example, tell them to select a colour and a shape when the programme opens. This will give me a shippable program with more features and will be able to be easily navigated by the user.
+</p>
+    <h3>My Trello plan </h3>
+    <div><img class="imgSizer" src="sprintFour.jpg"></div>
+    <h3> Testing </h3>
+    <p> These pictures from the first tests test if the buttons for the rectangle shape and the ellipse shape are working. I encountered errors when creating the select and hover feature for these buttons.</p>
+    <div><img class="imgSizer" src="shapeSprint.jpg"></div>
+        <p> This second test tests if the buttons work correctly with the ellipse shape being added to the program.
+        </p>
+    <div><img class="imgSizer" src="shapeSprint1.jpg"></div>
+        <p> This third test,tests the instructional text on the screen. I want this to change colours when a different colour is hovered on or selected. The "Select a colour" should a appear before "Select a shape".
+            </p>
+        <div><img class="imgSizer" src="text1.jpg"></div>
+        <br>
+        <div><img class="imgSizer" src="text.jpg"></div>
+        <p> This last test, tests all the features and if I have finished my sprint. 
+        </p>
+        <div class="vid_div"><video width="800"  controls>
+            <source src="sprint4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+        <li><a href="SPRINT4/index.html"> Sprint Four File</a></li>
+        <hr>
+
+
+        <h1>Fifth Sprint: </h1>
+        <p>My aim is to create more shapes to draw in the program. I will make a heart, circle, line, and triangle function. I will also be doing some basic reformatting to fit in more buttons for these extra shapes. I will have separate rows for the colour buttons and the shape buttons.<br>
+            <br>
+            I will now have a shippable product with <span class="bold">six </span>colours and <span class="bold">six </span> shapes.
+</p>
+        <h3>My Trello plan </h3>
+        <div><img class="imgSizer" src="sprintFive.jpg"></div>
+        <h3> Testing </h3>
+        <p> The first shape I made for this sprint was the circle. I thought the circle would be the most simple as it is very similar to an ellipse. However the circle was the most challenging. It was very difficult to make the circle (with any radius) appear in the outline box, let alone, the centre of this box. </p>
+        <div class="vid_div"><video width="800"  controls>
+                <source src="circleTest2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+        <div class="vid_div"><video width="800"  controls>
+                <source src="circleTest.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+            <p> The second shape I made was a triangle. This turned out to be the easiest shape to make in this sprint. Note: The triangle does appear upside down if the outline box height is negative, however I think this makes a cool drawing feature so there is more variation of the triangles' appearence. Triangles can be upside down and still be a triangle. 
+            </p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src="triangle.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+            <p> This next, tests if the heart function is working correctly. I also had some small errors with this shape. It would probably be good to make the heart not be able to be upside down, as hearts are never upside down. I will fix this using the absolute value function. 
+                </p>
+                <div class="vid_div"><video width="800"  controls>
+                    <source src="heart.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+            <p> This last test, tests the line function. I have finished my sprint. 
+            </p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src="line.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <p> Reflection: I would like to change the line function, and changing the outline to make it clearer that the function is drawing a line rather than a rectangle. I would like to create more of a brush function rather than a 'line'. It would nice if it draws while the user drags on the screen. So the drawing would need to pushed when the mouse is down rather than when the mouse comes up. 
+                </p>
+            <li><a href="SPRINT5/index.html"> Sprint Five File</a></li>
+            <hr>
+
+
+
+            <h1>Sixth Sprint: </h1>
+            <p>My aim for this sprint is to create an undo and clear all button.<br>
+                This will let the user remove a shape, or all the shapes, from the screen. I will also change the button of the line function to a brush image. I will reformat and create button graphics. I will add more colours and make my original colours brighter.</p>
+            <h3>My Trello plan </h3>
+            <div><img class="imgSizer" src="sprintSix.jpg"></div>
+            <h3> Testing </h3>
+            <p> This first test tests the change in colours.</p>
+            <div class="vid_div"><video width="800"  controls>
+                    <source src="newcolours.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+            </div>
+            <p> This second test tests the slider that changes the line width.
+            </p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src="linewidth.mp4" type="video/mp4">
                 Your browser does not support the video tag.
                 </video>
             </div>
-            <p> This third test, tests whether I have completed my first sprint.
-                </p>
-                <div><img class="imgSizer" src="sprintOneImage.jpg"></div>
-            <li><a href="SPRINT2/index.html"> Sprint Two File</a></li>
+
+            <p> The next test tests my buttons in the new format. I chose to reformat in order to fit more buttons and features into my program while keeping the program user friendly and easy to navigate.
+            </p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src="sprint6.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <p> This next test, tests the new buttons I made for my undo and clear all function. (Note: I have temporarily hidden the shape buttons by removing their update from the main to make focusing on the undo buttons easier and make the workspace simpler, I will add them back in at the end of this sprint.)
+            </p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src="buttonsMade.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <p> The next test, test if the undo function work correctly. Now the buttons only changed colour when the mouse goes down on them and changes back as the mouse comes up.
+            </p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src="undo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <p> I have created some colours and reformatted some buttons slightly. I have created two new buttons I hope to use later to be able to also change the canvas background colour as well as the draw colour.   
+            </p>
+            <div><img width = "400" src="buttons.jpg"></div>
+            
+            <p>This final test tests the use of the undo button and the now the reset button which clears everything on the screen. </p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src="reset.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <p>Reflection: I created the buttons for the change background color functions in this sprint when I will not be adding the code to make these buttons work until a few sprints later. Reflecting, this may not have been the best way to do this as this could be potentially confusing. However, it made sense to create the buttons as I did a lot of reformatting for the colour buttons so I added these buttons in, deciding to do all the formatting and layout of buttons on the screen now, rather than having to do some now and change it in a later sprint when I decided to add these buttons in. It can still be seen however, that by the end of this sprint the formatting has not been completed as some of the shape buttons and brush button are messy and over lapping. This will be changed in the following sprints. All the buttons work so I decided to finish this sprint. In the next sprints, as well as adding new features, these problems should be fixed. Another problem is the text on the screen, it is not centred. </p>
+            <li><a href="SPRINT6/index.html"> Sprint Six File</a></li>
             <hr>
-        
+
+
+
+            <h1>Seventh Sprint: </h1>
+            <p>My aim for this sprint is make the line button draw like a brush when the mouse goes down. I will create a circle where the mouse is and more circles will be pushed when the brush moves creating a brush stroke effect.<br></p>
+            <h3>My Trello plan </h3>
+            <div><img class="imgSizer" src="sprintSeven.jpg"></div>
+            <h3> Testing </h3>
+            <p> First I am testing a hover feature created for the brush function to show the user where they are about to draw on the screen. This circle follows the users mouse in boundary box.   
+            </p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src="brushMouse.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <p> Here I am testing my new brush function that allows the user to free hand draw on the boundary box. The user uses the slider to set the width of the brush.  
+            </p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src="end.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <p> An error I have is when the user draws they can draw past the edge of the bounds box. This is because the mouse is in the centre of the drawing circle so the mouse isn't crossing the bound but the drawings do.   
+            </p>
+            <div><img class="imgSizer2" src="clip.jpg">
+            </div>
+            <p>I will use the clip function to fix this.</p>
+            <div><img class="imgSizer2" src="clip2.jpg"></div>
+
+            <p>I have made the brush image get bigger when it is selected. This shows the user they have selected the brush button and that they can draw with it. The size changes back when it is no longer selected. I have finished this sprint.</p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src="sprint7.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+            <p>Reflection:  I think the puprle and yellow work well as the base colours for the workspace as they are muted and classic, allowing the user's drawing to stand out on screen. One problem I have is the brush guide does not appear in the drawing box until the mouse goes down once, this is managable for the user though. The brush function is not perfect, as when the user moves the mouse too fast we can see it pushes circles too slow and there are gaps in the stroke. However, if the user doesn't move the mouse too fast this problem should unnoticed and should be okay.</p>
+
+            <li><a href="SPRINT7/index.html"> Sprint Seven File</a></li>
+            <hr>
+
+
+
+            <h1>Eighth Sprint: </h1>
+        <p>My aim for this sprint is to create a redo button. This will let the user redo what they have undoed with the undo button. I will also loop some of my code in the main to make my code more managable and readable. This will also make the code easier to change or to have something added to it. <br>
+            <br>
+            I will be adding <span class="bold"> thorough </span> comments to my code.  
+</p>
+        <h3>My Trello plan </h3>
+        <div><img class="imgSizer" src="SPRINT8.JPG"></div>
+        <h3> Testing </h3>
+        <p> I have increased the size of the brush image when it is selected to show the user when it is selected.  </p>
+        <div class="vid_div"><video width="800"  controls>
+                <source src="sprint7.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+            <p> For this second test, I changed the text for the white button from white to grey, as the white was difficult to read against the faint yellow background. The improves the user's experience and interface.   
+            </p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src=".mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+            <p> This next, tests the redo button. The basic implimentation of this works, however it can be seen that at the end of the test I ran into an error. The redo button pushed the wrong shape onto the screen and then the program crashed. 
+                </p>
+                <div class="vid_div"><video width="800"  controls>
+                    <source src=".mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+            <p> This last test, tests the line function. I have finished my sprint. 
+            </p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src=".mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+            <p>Reflection:                 </p>
+            <li><a href="SPRINT8/index.html"> Sprint Eight File</a></li>
+            <hr>
+
+
+
+            <h1>Ninth Sprint: </h1>
+        <p>My aim is to add the line function back in. This will also take the length from the slider<br>
+            <br>
+</p>
+        <h3>My Trello plan </h3>
+        <div><img class="imgSizer" src="sprintFive.jpg"></div>
+        <h3> Testing </h3>
+        <p> The first shape I made for this sprint was the circle. I thought the circle would be the most simple as it is very similar to an ellipse. However the circle was the most challenging. It was very difficult to make the circle (with any radius) appear in the outline box, let alone, the centre of this box. </p>
+        <div class="vid_div"><video width="800"  controls>
+                <source src="circleTest2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+        <div class="vid_div"><video width="800"  controls>
+                <source src="circleTest.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+            <p> The second shape I made was a triangle. This turned out to be the easiest shape to make in this sprint. Note: The triangle does appear upside down if the outline box height is negative, however I think this makes a cool drawing feature so there is more variation of the triangles' appearence. Triangles can be upside down and still be a triangle. 
+            </p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src="triangle.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+            <p> This next, tests if the heart function is working correctly. I also had some small errors with this shape. It would probably be good to make the heart not be able to be upside down, as hearts are never upside down. I will fix this using the absolute value function. 
+                </p>
+                <div class="vid_div"><video width="800"  controls>
+                    <source src="heart.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+            <p> This last test, tests the line function. I have finished my sprint. 
+            </p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src="line.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <p> Reflection: I would like to change the line function, and changing the outline to make it clearer that the function is drawing a line rather than a rectangle. I would like to create more of a brush function rather than a 'line'. It would nice if it draws while the user drags on the screen. So the drawing would need to pushed when the mouse is down rather than when the mouse comes up. 
+                </p>
+            <li><a href="SPRINT9/index.html"> Sprint Nine File</a></li>
+            <hr>
+
+
+
+            <h1>Tenth Sprint: </h1>
+        <p> This is my last sprint in my program. By the end of this sprint my program should be finished. I am going to remove the redo button in this sprint as it poses too confusing :)<br>
+            <br>
+</p>
+        <h3>My Trello plan </h3>
+        <div><img class="imgSizer" src="sprintFive.jpg"></div>
+        <h3> Testing </h3>
+        <p> The first shape I made for this sprint was the circle. I thought the circle would be the most simple as it is very similar to an ellipse. However the circle was the most challenging. It was very difficult to make the circle (with any radius) appear in the outline box, let alone, the centre of this box. </p>
+        <div class="vid_div"><video width="800"  controls>
+                <source src="circleTest2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+        <div class="vid_div"><video width="800"  controls>
+                <source src="circleTest.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+            <p> The second shape I made was a triangle. This turned out to be the easiest shape to make in this sprint. Note: The triangle does appear upside down if the outline box height is negative, however I think this makes a cool drawing feature so there is more variation of the triangles' appearence. Triangles can be upside down and still be a triangle. 
+            </p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src="triangle.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+            <p> This next, tests if the heart function is working correctly. I also had some small errors with this shape. It would probably be good to make the heart not be able to be upside down, as hearts are never upside down. I will fix this using the absolute value function. 
+                </p>
+                <div class="vid_div"><video width="800"  controls>
+                    <source src="heart.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+            <p> This last test, tests the line function. I have finished my sprint. 
+            </p>
+            <div class="vid_div"><video width="800"  controls>
+                <source src="line.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <p> Reflection: I would like to change the line function, and changing the outline to make it clearer that the function is drawing a line rather than a rectangle. I would like to create more of a brush function rather than a 'line'. It would nice if it draws while the user drags on the screen. So the drawing would need to pushed when the mouse is down rather than when the mouse comes up. 
+                </p>
+            <li><a href="SPRINT10/index.html"> Final Product File</a></li>
+            <hr>
+
+
+
+            <h1>Product Backlog: </h1>
+    <p>This is my list of things I was hoping to create or build into my program in this assessment. If I was to build more features into my program I would use these ideas. </p>
+    <h3>My Trello plan </h3>
+    <div><img class="imgSizer" src="productBacklog.jpg"></div><hr>
+
 </body>
 </html>
