@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Life+Savers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bahiana" rel="stylesheet">
+    <title>Pippi's Palace Github</title>
+    <style type="text/css">
+        
+        body{
+            background-color: rgb(255, 222, 243);
+            margin-left: 20px;
+            font-family: Helvetica, sans-serif;
+        }
+        .imgSizer{
+            width: 1200px;
+            margin-bottom: 20px;
+            
+        }
+        .imgSizer2{
+            width: 650px;
+            margin-bottom: 20px;
+            
+        }
+        .vid_div{
+            margin-bottom: 30px;
+        }
+        .bold{
+            font-style: italic;
+            font-weight:bolder; 
+
+        }
+        .mylist li a{
+            color: hotpink;
+        }
+        .mylist li a:visited{
+            color: hotpink;
+        }
+        .mylist li a:hover{
+            color: white;
+        }
+        h1{
+            font-family: 'Bahiana', cursive;
+            font-size: 50px;
+        }
+        .topnav {
+        overflow: hidden;
+        background-color:hotpink;
+        }
+
+        .topnav a {
+        float: left;
+        font-family: 'Bahiana', cursive;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration-line: underline;
+        font-size: 30px;
+        }
+
+        .topnav-right a {
+        color: #f2f2f2;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 20px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        }
+
+        .topnav-right a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+
+        .topnav-right a.active {
+        background-color: #4CAF50;
+        color: white;
+        }
+
+        .topnav-right {
+        float: right;
+        }
+    </style>
+
+</head>
+<body>
+
+        <div class="topnav">
+                <a href="#">Pippi's Palace Github</a>
+                <div class="topnav-right">
+                  <a href="index.html">Planning</a>
+                  <a href="sprints.html">Sprints</a>
+                  <a href="summary.html">Conclusion</a>
+                </div>
+              </div>
+
+
+
+    <h1>Relevant Implications</h1>
+    <P>-   We have future proofed the design of this program. Future Proofing means the program is designed so new features can be added easily and the old ones easily removed.
+        <br><br>
+        -    I have looped my buttons in my main so more buttons can be easily added with little code changes. 
+        <br><br>
+        -   I know this as I have been adding things this whole time, in each of the sprints. We addressed this in the way the programme has been designed.
+        <br><br>
+        -   Program elements (colours, buttons and shapes) have all been programed as objects. This means each object is a self contained module piece of code that takes a defined set of parameters to work. Most take basic mouse data and colours to work. All objects are built to a similar structure and compulsorily contain an update function. This means they can appear on the interface using the update call. Management of most of the objects happens in a central place (Control Object). The idea is if you give the program to someone else (an experienced programmer), they could interpret what it does and built a new component. They could remove features and add new features. 
+        <br><br>
+        -   Comments in the code are precise and informative. 
+        </P><hr>
+
+    <h1>Functionality</h1>
+    <P><span class="bold">Does the program work well?</span> My program is free of bugs and loads quickly. It is also able to works on different browsers so I can conclude my program does work well. 
+        <br><br><span class="bold">How have we addressed this?</span> My program is programmed in pure javascript (almost) so it has a very low file size which allows it to run fast. It has only one graphic. So it loads very quickly. I know this as I have been running it many times. I have tested by using a live web server to store my versions, and have observed loading performance. 
+    <br><br> To ensure my program works well I have systematically tested it throughout my sprints. I have also tested user interactions.
+    <br><Br>I have tested position of clicking and direction of dragging. This has included careful checks around boundaries. 
+    <br><Br>The use of the Math.abs function was discovered after testing failures drawing circular shapes (because these objects were being given negative radius values). 
+    <br><br>Finally, any new components were tested prior to being added to the main program. At various stages in sprints, console logging was used to analyse boundary test functions and to locate problems when bugs appeared. 
+            </P><hr>
+
+    <h1>Trialling and Making Decisions</h1>
+    <P><span class="bold">Can you find examples of exploring different options and making a decision about which is the best solution?</span> 
+    <br><Br>I trialled different options for allowing the user to draw circles on screen giving circular or rectangular guides. For my slider I tried different lengths and size bar and circle to allow the user to best slide the slider and to give the best length for the line width.
+        <BR><BR>I effectively used information from testing and trialling to improve the functionality of the outcome. I trialled interface design colour themes and draw colours. 
+        <BR><BR>I found situations where objects drew outside of the drawing area (in spite of having in boudnary parameters). This led to the use of the clip() function. 
+        <BR>
+        <BR><span class="bold">How did your working process (planning, testing, trialling) lead to the development of a high quality digital outcome? How was the Agile process helpful?</span>
+        <br><br> I allowed planning and development to happen together and created repeated cycles of plan develop test. After two or three sprints, I got a much clearer idea of what I could achieve and my aims became much more focused and realistic. The Agile process helped to see the project in a highly simplified form at the start. My project backlog allowed me to select ideas to implement into my program each sprint and further my concept for my shippabble product. The concept of prioritisation                       
+        </P><hr>
+
+            <h1>Product Backlog: </h1>
+    <p>This is my list of things I was hoping to create or build into my program in this assessment. If I analyse this list, it is clear I have achieved a large amount of the things I wanted to achieve for my program. If I was to build more features into my program, I would draw from these ideas or engage some users in testing to find out what potentional users wanted from my product. </p>
+    <h3>My Trello plan </h3>
+    <div><img class="imgSizer" src="productBacklog.jpg"></div><hr>
+
+</body>
+</html>
